@@ -1,0 +1,252 @@
+body, h1, h2, p {
+    margin: 0px;
+    padding: 0;
+}
+
+h2{
+    margin: 15px 0px 20px 0px;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #720f0f;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+@media(min-width: 600px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    nav {
+        flex-direction: row;
+    }
+}
+
+#home {
+    padding: 40px;
+    background-color: #ffffff;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#home h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+#about {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.gallery-item {
+    background-color: #fff;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    max-width: 300px; 
+}
+
+.caption {
+    padding: 10px;
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.col {
+    padding: 10px 0;
+    margin: 50px 0;
+    flex-grow: 1;
+}
+
+#margin {
+    padding-top: 30px;
+}
+
+.middle {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#about .round-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.round-image {
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    max-width: 300px; 
+}
+
+#lineHeight {
+    line-height: 30px;
+}
+
+@media(min-width: 600px) {
+    .row {
+        flex-direction: row;
+    }
+
+    #about .round-images {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media(min-width: 1024px) {
+    body {
+        width: 1024px;
+    }
+}
+
+/* styles for about.html page */
+.about-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.about-image-item {
+    background-color: #fff;
+    text-align: center;
+}
+
+.about-image-item img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+}
+
+
+/* styles for gallery.html page */
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    background-color: #fff;
+    text-align: center;
+    overflow: hidden; 
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    max-width: 300px; 
+    transition: transform 0.3s ease; 
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1); 
+}
+
+
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item {
+    background-color: #fff;
+    text-align: center;
+    overflow: hidden; 
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    max-width: 300px; 
+    transition: transform 0.3s ease; 
+}
+
+.gallery-item img:hover {
+    transform: scale(1.1); 
+}
+
+.caption {
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+}
